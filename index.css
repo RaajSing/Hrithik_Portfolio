@@ -1,0 +1,1135 @@
+*{
+    font-family: sans-serif;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top:13.5rem;
+}
+body{
+    background: #011f4c;
+    position: relative;
+}
+/* This Style For Big Img */
+#bigImgParent{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background: rgb(4 22 44 / 90%);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display:none;
+}
+#bigImgParent .closeBtn{
+    position: absolute;
+    top:2rem;
+    right:2rem;
+    height:4rem;
+    width:4rem;
+    border-radius: .2rem;
+    text-align: center;
+    background: #fe5a35;
+    color:white;
+    font-size: 3rem;
+    cursor: pointer !important;
+}
+#bigImgParent .bigImgBox{
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: .3rem;
+    background: #094456;
+    text-align: center;
+}
+#bigImgParent .bigImgBox img{
+    /* width: 30rem; */
+    height:85rem;
+    display: block;
+}
+
+
+/*================================= Header Section Style Start Here =====================================  */
+#header{
+    width:100%;
+    padding:2rem 8%;
+    box-shadow: 0 0 0.7rem 0rem #ee9d9d !important;
+    z-index: 1000;
+    border-bottom: .1rem solid #0a1729;
+}
+#header .mobileNav{
+    display: none;
+}
+.scrollHeader{
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: #051e44;
+    transition:all .4s linear;
+}
+#header .dNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .dNav .center p{
+    font-size: 2rem;
+    color: white;
+}
+#header .dNav .center p span{
+    color: #fe5a35;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#header .dNav .navItem{
+    list-style: none;
+    display:flex;
+}
+#header .dNav .navItem li{
+    margin:0 1rem;
+}
+#header .dNav .navItem li a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: .8rem 1rem;
+    position: relative;
+    color:#bebdbd;
+    transition: .3s linear;
+    cursor: pointer;
+}
+#header .dNav .navItem li a:hover{
+    color:white;
+}
+#header .dNav .navItem li a::after{
+    content:'';
+    display:block;
+    width:0%;
+    height:.2rem;
+    background: #fe5a35;
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+    transition:all .3s ease-in-out;
+}
+#header .dNav .navItem li a:hover::after{
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Banner Sectiohn Style Start Here !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#banner{
+    width:100%;
+    padding:5rem 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background: #011f4c;
+    color: white;
+    position: relative;
+    overflow:hidden;
+}
+.bannerContent{
+    text-align: center;
+    z-index: 10;
+}
+.bannerContent h1{
+    font-size: 6rem;
+    line-height: 7rem;
+    font-weight: 500;
+}
+.bannerContent h1 span{
+    font-weight: 900;
+    color:#fe5a35;
+}
+.bannerContent h1 i{
+    font-weight: 700;
+    color:#fe5a35;
+}
+.bannerContent p{
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+#banner .shadowBox{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    list-style: none;
+    z-index: 1;
+}
+#banner .shadowBox li{
+    position: absolute;
+    width:25rem;
+    height:25rem;
+    background: #011f4c;
+    box-shadow: 0 0 1rem 1rem #041242;
+}
+#banner .shadowBox .circle1{
+    top: -5rem;
+    left:5rem;
+    border-radius: 50%;
+    width:20rem;
+    height:20rem;
+    z-index: 100;
+}
+#banner .shadowBox .circle2{
+    bottom: 4rem;
+    left: 12rem;
+    border-radius: 50%;
+    width:30rem;
+    height:30rem;
+    z-index: 1;
+}
+#banner .shadowBox .circle3{
+    right: 0rem;
+    top: 2rem;
+    border-radius: 50%;
+    z-index: -1;
+}
+#banner .shadowBox .square1{
+    top: 10rem;
+    transform: rotate(20deg);
+    left:16rem;
+    z-index: 1;
+}
+#banner .shadowBox .square2{
+    top: -14rem;
+    left: 45%;
+    transform: rotate(10deg);
+}
+#banner .shadowBox .square3{
+    bottom: 19rem;
+    right: -6rem;
+    transform: rotate(60deg);
+    height: 20rem;
+    width: 20rem;
+}
+#banner .shadowBox .square4{
+    top: -2rem;
+    right: 32rem;
+    transform: rotate(19deg);
+    height: 15rem;
+    width: 10rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================== About Me Section Start Here ================================== */
+#aboutMe{
+    padding:5rem 8%;
+    width:100%;
+}
+#aboutMe .aboutInfoWrapper{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    gap:2rem;
+}
+.aboutInfoWrapper .leftInfo{
+    flex-basis: 40%;
+}
+.aboutInfoWrapper .leftInfo p{
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+.aboutInfoWrapper .leftInfo h2{
+    font-size: 4rem;
+    line-height: 5.5rem;
+}
+.aboutInfoWrapper .leftInfo h2::after{
+    content:'';
+    display: block;
+    width:7rem;
+    height:.2rem;
+    background: #fe5a35;
+    margin-top: 1.5rem;
+    transition: .3s linear;
+}
+.aboutInfoWrapper .leftInfo:hover h2::after{
+    width:100%;
+}
+.aboutInfoWrapper .rightInfo{
+    flex-basis: 50%;
+    min-width: 50rem;
+}
+.aboutInfoWrapper .rightInfo p{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    line-height: 3.3rem;
+}
+.aboutInfoWrapper .rightInfo .social{
+    list-style: none;
+    margin-top: 2rem;
+    padding: 0;
+}
+.aboutInfoWrapper .rightInfo .social li{
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+.aboutInfoWrapper .rightInfo .social li:last-child{
+    margin-right:0;
+}
+.aboutInfoWrapper .rightInfo .social li a{
+    height:3.5rem;
+    width:3.5rem;
+    border-radius: 50%;
+    background: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 3.5rem;
+    font-size: 2.2rem;
+    color:#fe5a35;
+    transition: .3s linear;
+}
+.aboutInfoWrapper .rightInfo .social li a:hover{
+    background: #fe5a35;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================= Services Section Style Start Here =============================== */
+#services{
+    width:100%;
+    padding: 5rem 8%;
+}
+#services .serviceBoxWrapper{
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+}
+.serviceBoxWrapper .sSeriviceBox{
+    color:white;
+    text-align: center;
+    background: #02275e;
+    padding: 2rem;
+    flex-basis: 26%;
+    min-width: 30rem !important;
+}
+.serviceBoxWrapper .sSeriviceBox .serviceIcon img{
+    width:60%;
+}
+.sSeriviceBox .serviceContent h3{
+    font-size: 3rem;
+    margin:1.5rem;
+}
+.sSeriviceBox .serviceContent p{
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+.sSeriviceBox .serviceContent a{
+    width:3.5rem;
+    height:3.5rem;
+    line-height: 3.5rem;
+    text-decoration: none;
+    background: #fe5a35;
+    color:white;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    font-size: 2.5rem;
+    margin: 1.5rem 1.5rem;
+    transition: .3s linear;
+}
+.sSeriviceBox .serviceContent a:hover{
+    background: white;
+    color:#fe5a35;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================== Resume Section Style Start Here ==================================== */
+#resume{
+    width:100%;
+    padding:5rem 8%;
+    text-align: left;
+}
+.sectionTittle{
+    text-align: center;
+    margin-bottom: 3rem;
+    color:white;
+    font-size: 3.5rem;
+}
+.sectionTittle::after{
+    content:'';
+    display: block;
+    width:7rem;
+    height:.4rem;
+    background: #fe5a35;
+    margin:auto;
+    margin-top: 1.5rem;
+}
+#resume .singleResume{
+    border-bottom: 1px solid red;
+    padding: 2rem;
+    color:white;
+}
+#resume .singleResume{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+.singleResume .leftPart h3{
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+.singleResume .leftPart p{
+    font-size: 1.8rem;
+    color:rgb(196, 195, 195);
+}
+.singleResume .leftPart{
+    flex-basis: 45%;
+}
+.singleResume .rightPart{
+    font-size: 1.8rem;
+}
+#resume .singleResume:last-child{
+    border-bottom: none;
+}
+#resume .togetherBtn{
+    padding: 1rem 1.5rem;
+    color:white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin: 5rem auto;
+    display: inline-block;
+    text-align: center;
+    background: #fe5a35;
+    border-radius: .3rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: .3s linear;
+}
+#resume .togetherBtn:hover{
+    background: white;
+    color:#fe5a35;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================ Work Section Style Start Here ===================================== */
+#work{
+    width:100%;
+    padding:5rem 8%;
+}
+#work .singleWorkWrapper{
+    display: flex;
+    justify-content: space-between;
+    gap:3rem;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+}
+.singleWorkWrapper .singleWork{
+    flex-basis: 23%;
+    min-width: 32rem;
+    padding: 1.5rem;
+    border-radius: .6rem;
+    background-color: #02275e;
+    /* outline: .1rem solid #90f8d2; */
+    /* outline-offset: -1.5rem; */
+    transition: all .3s linear;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.singleWorkWrapper .singleWork:hover{
+    outline-offset: -.1rem;
+}
+.singleWork .hoverEffect{
+    position: absolute;
+    top: 108%;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: #02275ec9;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s linear;
+}
+.singleWorkWrapper .singleWork:hover .hoverEffect{
+    top:0;
+}
+.singleWork .hoverEffect .button{
+    text-transform: uppercase;
+    padding:.5rem 2.5rem;
+    font-size: 2rem;
+    border:none;
+    margin:0 1.5rem;
+    background: none;
+    outline:.1rem solid white !important;
+    position: relative;
+    z-index: 100 !important;
+    color: #fe5a35;
+    overflow: hidden;
+    transition: .2s linear;
+    text-decoration: none;
+    cursor: pointer;
+}
+.singleWork .hoverEffect .button:hover{
+    color:white;
+}
+.singleWork .hoverEffect .button::after{
+    content:'';
+    display: block;
+    width:100%;
+    height:0%;
+    background: #fe5a35;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1 !important;
+    border-radius: 30% 30% 0% 0;
+    transition: .3s linear;
+}
+.singleWork .hoverEffect #imgBtn{
+    text-transform: uppercase;
+    padding:.5rem 2.5rem;
+    font-size: 2rem;
+    border:none;
+    margin:0 1.5rem;
+    background: none;
+    outline:.1rem solid white !important;
+    position: relative;
+    z-index: 100 !important;
+    color: #fe5a35;
+    overflow: hidden;
+    transition: .2s linear;
+    text-decoration: none;
+}
+.singleWork .hoverEffect #imgBtn:hover{
+    color:white;
+}
+.singleWork .hoverEffect #imgBtn::after{
+    content:'';
+    display: block;
+    width:100%;
+    height:0%;
+    background: #fe5a35;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1 !important;
+    border-radius: 30% 30% 0% 0;
+    transition: .3s linear;
+}
+.singleWork .hoverEffect #imgBtn:hover::after{
+    height: 140%;
+}
+.singleWork .hoverEffect .button::after:first-child{
+    top:0;
+}
+.singleWork .hoverEffect .button:hover::after{
+    height: 140%;
+}
+.singleWork .workImgBox{
+    width:100%;
+    height:40rem;
+    overflow: hidden;
+}
+.singleWork .workImgBox img{
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================== Skills Section Style Start Here =========================== */
+#skills{
+    padding: 5rem 8%;
+}
+#skills .skillsParent{
+    width:50%;
+    list-style: none;
+    margin: auto;
+    color: white;
+    padding: 2rem;
+}
+.skillsParent li{
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 4.5rem;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+.skillsParent li::before{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgb(18 23 50);
+    margin-top: .5rem;
+    top: calc(100%);
+}
+.skillsParent li::after{
+    content:'';
+    display: block;
+    width: 0%;
+    height: 100%;
+    background: #245ca2;
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+#webDesign::after{
+    animation-name: web;
+    animation-fill-mode: forwards;
+}
+#graphicDesign::after{
+    animation-name: graphic;
+    animation-fill-mode: forwards;
+}
+#photoshop::after{
+    animation-name: photoshop;
+    animation-fill-mode: forwards;
+}
+#illustrator::after{
+    animation-name: illustrator;
+    animation-fill-mode: forwards;
+}
+@keyframes web{
+
+    0%{
+        width:0;
+    }
+    100%{
+        width:80%;
+    }
+}
+@keyframes graphic{
+
+    0%{
+        width:0;
+    }
+    100%{
+        width:70%;
+    }
+}
+@keyframes photoshop{
+
+    0%{
+        width:0;
+    }
+    100%{
+        width:75%;
+    }
+}
+@keyframes illustrator{
+
+    0%{
+        width:0;
+    }
+    100%{
+        width:65%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================================== FAQ Section Style Start Here ===================================*/
+#faq{
+    width:100%;
+    padding: 5rem 8%;
+}
+#faq .faqWrapper{
+    text-align: center;
+    width:60%;
+    margin:auto;
+}
+.accordion-item, .accordion-header {
+    border: none;
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+}
+.accordion-item{
+    box-shadow: 0 2px 20px 0 rgba(247, 247, 248, 0.18);
+}
+.accordion-button{
+    width:100%;
+    height:48px;
+    color:black;
+    font-weight: 600;
+    text-align: left;
+    font-size: 2rem;
+}
+.accordion-button:focus {
+    z-index: none !important;
+    border-color: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color:white;
+    box-shadow: transparent;
+}
+.accordion-body {
+    background: #f7fbfd !important;
+    font-size: 1.8rem;
+}
+.img1{
+    width:80%;
+    min-width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================== Footer Section Style Start Here ============================ */
+section#footer {
+    padding: 3rem 8%;
+}
+
+section#footer .footerContent {
+    text-align: center;
+    color: white;
+}
+
+#footer .footerContent h3 {
+    font-weight: 100;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+#footer .footerContent h2 {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+    line-height: 4.5rem;
+    font-weight: 100 !important;
+}
+section#footer .footerContent hr {
+    color: #fe5a35;
+    height: .2rem;
+}
+#footer .footerContent .mailOrPhn span {
+    display: inline-block;
+    margin: 0 1.5rem;
+    font-size: 1.8rem;
+}
+
+#footer .footerContent .mailOrPhn {
+    margin-bottom: 5rem;
+}
+
+section#footer .footerContent .bottomNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+section#footer .footerContent .bottomNav .footerMenu, .social{
+    list-style: none; 
+    display: flex; 
+    gap: 2rem;
+}
+section#footer .footerContent .bottomNav .footerMenu li a:hover{
+    color:#fe5a35;
+}
+section#footer .footerContent .bottomNav .footerMenu, .social, li a{
+    font-size: 2rem;
+    text-decoration: none;
+    color:#999999;
+    transition: .3s linear;
+    cursor: pointer !important;
+}
+section#footer .footerContent .bottomNav .social li{
+    transition: .3s linear;
+}
+section#footer .footerContent .bottomNav .social li a{
+    font-size: 2.8rem !important;
+    transition: .3s linear;
+    cursor: pointer !important;
+}
+section#footer .footerContent .bottomNav .social li:hover{
+    transform: rotate(360deg);
+}
+section#footer .footerContent .bottomNav .social li a:hover{
+    color: #fe5a35;
+    transform: rotate(90deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================== Responsive Design Start Here ================================= */
+@media screen and (max-width:1200px){
+
+    .serviceBoxWrapper .sSeriviceBox{
+        flex-basis: 38%;
+    }
+    .singleWorkWrapper .singleWork{
+        flex-basis: 40%;
+    }
+    #skills .skillsParent{
+        width:80%;
+    }
+    #faq .faqWrapper{
+        width:75%;
+    }
+}
+
+@media screen and (max-width:1024px){
+
+    .singleWorkWrapper .singleWork{
+        flex-basis: 45%;
+    }
+}
+
+/*========= This Style is Responsive For Small Device ====  */
+@media screen and (max-width:940px){
+
+    #header .dNav{
+        display: none;
+    }
+    #header .mobileNav{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #header .mobileNav .hamburger{
+        font-size: 2.5rem;
+        color:white;
+        cursor: pointer !important;
+    }
+    #header .mobileNav .center p{
+        font-size: 2rem;
+        color: white;
+    }
+    #header .mobileNav .center p span{
+        color: #fe5a35;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    #header .mobileNav .mNavItem{
+        list-style: none;
+        display:flex;
+        flex-direction: column;
+        position: absolute;
+        top:0;
+        right:-110%;
+        padding: 2rem;
+        background: #060d40;
+        width:30rem;
+        transition: .3s ease-in-out;
+        z-index: 1500;
+        height: 100vh;
+    }
+    #header .mobileNav .mNavItem #close{
+        font-size: 4rem;
+        color:white;
+        position: absolute;
+        top:2.5rem;
+        right:2rem;
+        cursor: pointer !important;
+        transition: .3s linear;
+    }
+    #header .mobileNav .mNavItem #close:hover{
+        color:#fe5a35;
+    }
+    #header .mobileNav .mNavItem.show{
+        right: 0 !important;
+    }
+    #header .mobileNav .mNavItem li{
+        margin:2rem 0;
+    }
+    #header .mobileNav .mNavItem li a{
+        font-size: 2.5rem;
+        text-decoration: none;
+        padding: .8rem 1rem;
+        position: relative;
+        color: white;
+        transition: .3s linear;
+    }
+    #header .mobileNav .mNavItem li a:hover{
+        color:#fe5a35;
+    }
+    #header .mobileNav .mNavItem li a::after{
+        content:'';
+        display:block;
+        width:0%;
+        height:.2rem;
+        background: #fe5a35;
+        position: absolute;
+        left:50%;
+        transform:translateX(-50%);
+        transition:all .3s ease-in-out;
+    }
+    #header .mobileNav .mNavItem li a:hover::after{
+        width:100%;
+        background: white;
+    }
+
+}
+
+
+@media screen and (max-width:900px){
+
+    #resume .singleResume{
+        gap:4rem;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    html{
+        font-size: 56.5%;
+    }
+    .singleWorkWrapper .singleWork{
+        flex-basis: 70%;
+    }
+    #work .singleWorkWrapper{
+        justify-content: center;
+    }
+    #aboutMe .aboutInfoWrapper{
+        flex-direction: column;
+        row-gap:5rem;
+    }
+    #skills .skillsParent{
+        width:88%;
+    }
+    #faq .faqWrapper{
+        width:86%;
+    }
+    #services .serviceBoxWrapper{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .serviceBoxWrapper .sSeriviceBox{
+        flex-basis: 60%;
+    }
+    .aboutInfoWrapper .rightInfo{
+        min-width: 30rem;
+    }
+
+}
+
+@media screen and (max-width:600px){
+
+    .singleWorkWrapper .singleWork{
+        flex-basis: 90%;
+        min-width: 26rem;
+    }
+    section{
+        padding: 5rem 2%;
+    }
+    .serviceBoxWrapper .sSeriviceBox{
+        flex-basis: 78%;
+    }
+    #skills .skillsParent{
+        width:95%;
+    }
+    #faq .faqWrapper{
+        width:95%;
+    }
+    section#footer .footerContent .bottomNav{
+        flex-direction: column;
+        row-gap: .15rem;
+    }
+    #footer .footerContent .mailOrPhn span{
+        margin:1.2rem;
+        display: block;
+    }
+}
+
+
+@media screen and (max-width:480px){
+
+    #banner{
+        height: 50vh;
+    }
+    #resume .singleResume{
+        flex-direction: column;
+        text-align: left;
+    }
+    .aboutInfoWrapper .leftInfo h2 br{
+        display: none;
+    }
+    .bannerContent h1{
+        font-size: 4rem;
+    }
+    .serviceBoxWrapper .sSeriviceBox{
+        flex-basis: 88%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --========================== Extra Website Interaction Style Here  ========================== */
+
+/* Scroll Button Here */
+
+#scrollBtn{
+    width:4rem;
+    height:4rem;
+    background: #fe5a35;
+    border-radius: 50%;
+    color:white;
+    font-size: 3rem;
+    opacity: 0;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    position: fixed;
+    bottom: .5rem;
+    right: 2rem;
+    cursor: pointer;
+    transition: .3s linear;
+    cursor: pointer !important;
+}
+#scrollBtn.scrollBtnShow{
+    opacity: 1;
+    bottom:3rem;
+}
+
+
+
+/* Preloader Here.... */
+#preloader{
+    width:100%;
+    height:100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(4, 5, 48, 0.815);
+}
+#preloader img{
+    width:10%;
+}
+
+
+
+
+.any{
+    font-size: 3.5rem;
+    color:tomato;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
